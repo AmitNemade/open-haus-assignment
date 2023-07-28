@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { createContext, useState, useContext } from "react";
 
 const UserContext = createContext();
