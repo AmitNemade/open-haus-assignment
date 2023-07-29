@@ -33,11 +33,12 @@ const Api = async (
 
   // Append headers
   // const [cookies, setCookies] = useCookies(["token"]);
+  const token = process.env.REACT_APP_TMDB_TOKEN
   const headers = {
     "Content-Type": "application/json",
     Accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzOTExNGVhZTgxMzA5YWU0MWNkZDk0Yjc2YTg5OTE3OCIsInN1YiI6IjY0YzExOWJmNjA2MjBhMDBlNDgwYmJmZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8zmLsB6W0l29CTX8BSe7gL8Tl3aX3C7TGjU415Fr_Ls",
+      `Bearer ${token}`,
   };
 
   // Set headers
